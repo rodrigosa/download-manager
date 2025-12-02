@@ -5,6 +5,8 @@ import com.example.downloadmanager.persistence.DownloadEntry;
 import com.example.downloadmanager.persistence.DownloadRepository;
 import lombok.extern.slf4j.Slf4j;
 
+import org.springframework.lang.NonNull;
+
 import java.io.BufferedInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -15,11 +17,12 @@ import java.time.LocalDateTime;
 @Slf4j
 public class DownloadTask implements Runnable {
 
+    @NonNull
     private final DownloadEntry entry;
     private final DownloadRepository repository;
     private volatile boolean running = true;
 
-    public DownloadTask(DownloadEntry entry, DownloadRepository repository) {
+    public DownloadTask(@NonNull DownloadEntry entry, DownloadRepository repository) {
         this.entry = entry;
         this.repository = repository;
     }
