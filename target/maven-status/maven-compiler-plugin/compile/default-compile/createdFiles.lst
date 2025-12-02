@@ -1,0 +1,10 @@
+com\example\downloadmanager\core\provider\ProviderType.class
+com\example\downloadmanager\core\provider\DownloadStatus.class
+com\example\downloadmanager\core\provider\DownloadProviderHandler.class
+com\example\downloadmanager\persistence\DownloadEntry.class
+com\example\downloadmanager\persistence\DownloadRepository.class
+com\example\downloadmanager\core\provider\DropboxProviderHandler.class
+com\example\downloadmanager\core\provider\GenericProviderHandler.class
+com\example\downloadmanager\config\StageInitializer.class
+com\example\downloadmanager\JavaFxApplication.class
+com\example\downloadmanager\config\UiApplicationEvent.class

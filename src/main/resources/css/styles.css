@@ -1,0 +1,60 @@
+.root-pane {
+    -fx-background-color: #1e1e1e;
+}
+
+.header-label {
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+}
+
+.url-field {
+    -fx-background-color: #2d2d2d;
+    -fx-text-fill: #ffffff;
+    -fx-background-radius: 5;
+    -fx-border-color: #3d3d3d;
+    -fx-border-radius: 5;
+    -fx-padding: 10;
+}
+
+.action-button {
+    -fx-background-color: #007acc;
+    -fx-text-fill: white;
+    -fx-background-radius: 5;
+    -fx-cursor: hand;
+    -fx-padding: 10 20;
+}
+
+.action-button:hover {
+    -fx-background-color: #0098ff;
+}
+
+.download-list {
+    -fx-background-color: transparent;
+    -fx-control-inner-background: #1e1e1e;
+}
+
+.list-cell {
+    -fx-background-color: #252526;
+    -fx-text-fill: white;
+    -fx-padding: 10;
+    -fx-border-color: #1e1e1e;
+    -fx-border-width: 0 0 1 0;
+}
+
+.list-cell:empty {
+    -fx-background-color: transparent;
+    -fx-border-width: 0;
+}
+
+.list-cell:selected {
+    -fx-background-color: #37373d;
+}
+
+.status-bar-label {
+    -fx-text-fill: #cccccc;
+}
+
+.progress-bar {
+    -fx-accent: #007acc;
+}
