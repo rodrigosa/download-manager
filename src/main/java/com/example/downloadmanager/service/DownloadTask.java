@@ -48,7 +48,6 @@ public class DownloadTask implements Runnable {
                 byte[] dataBuffer = new byte[1024];
                 int bytesRead;
                 long totalBytesRead = 0;
-                long startTime = System.currentTimeMillis();
 
                 while ((bytesRead = in.read(dataBuffer, 0, 1024)) != -1) {
                     if (!running) {
