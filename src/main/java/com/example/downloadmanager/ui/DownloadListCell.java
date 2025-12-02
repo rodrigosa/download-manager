@@ -70,7 +70,12 @@ public class DownloadListCell extends ListCell<DownloadEntry> {
             } else if (item.getStatus() == DownloadStatus.COMPLETED) {
                 actionButton.setText("Open");
                 actionButton.setOnAction(e -> {
-                    /* Open file logic */ });
+                    try {
+                        java.awt.Desktop.getDesktop().open(new java.io.File(item.getDestinationPath()));
+                    } catch (java.io.IOException ex) {
+                        ex.printStackTrace();
+                    }
+                });
                 cancelButton.setDisable(true);
                 progressBar.setProgress(1.0);
             } else {

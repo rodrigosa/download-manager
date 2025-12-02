@@ -14,6 +14,7 @@ public class JavaFxApplication extends Application {
     @Override
     public void init() {
         applicationContext = new SpringApplicationBuilder(DownloadManagerApplication.class)
+                .headless(false)
                 .run();
     }
 

@@ -33,6 +33,8 @@ public class DownloadTask implements Runnable {
             updateStatus(DownloadStatus.DOWNLOADING);
             URL url = new URL(entry.getUrl());
             HttpURLConnection connection = (HttpURLConnection) url.openConnection();
+            connection.setRequestProperty("User-Agent",
+                    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36");
 
             // Resume logic if supported
 
